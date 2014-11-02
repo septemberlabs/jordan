@@ -36,6 +36,6 @@ Route::get('stories/{stories}/delete', [
     'uses' => 'StoriesController@destroy'
 ]);
 
-Route::get('env', [
+Route::get('env', function(){
     return App::environment();
-]);
+});
